@@ -1,97 +1,62 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projeto em bootsrrap</title>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Projeto Final HTML 5</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-<head>
-<!-- SEO - Search Engine Optimize -->
-<!-- Meta Author: Quem enta publicando esta pagina (pessoa ou empresa) -->
-<meta name="author" content="Nickole Chagas">
-<!-- Meta description: resumop do conteudo que sera encontrado nesta pagina.
-Esta informação aparecerá na RP logo abaixo do título -->
-<meta name="description" content="Até 25 palavras para o google indexar">
-<!--  meta kaywords: palavras que condizem com o conteudo da sua pagina em questão
- muda de pagina para pagina até 25 palavras chaves -->
-<meta name="keywords" content="palavra chave do site, mais uma palavra relevante, sempre separada por virgula">
-<!-- SEO - Search Engine Optimize -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- MENU PRINCIPAL DE NAVEGA -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <!-- div para o menu do celular -->
+          <button type="button" name="button" class="navbar-toggle collapsed"
+          data-toggle="collapse"
+          data-target="#menu-principal" aria-expand="false">
+          <span class="sr only">Menu para celular</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+</button>
+<!-- FIM DO BOTAO DE MANU PARA CELULAR -->
 
-<!-- BOOTSTRAP -->
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<!-- FECHA BOOTSTRAP -->
-</head>
-
-<body>
-
-  <script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "Organization",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Curitiba, Brasil",
-    "postalCode": "80010150",
-    "streetAddress": "Rua Monsenhor Celso, 256"
-  },
-  "email": "chagasnickole(at)gmail.org",
-  "faxNumber": "(41) 3324-0015",
-  "name": "Minha Empresa S.A",
-  "telephone": "(41) 3324-0015"
-}
-</script>
-
-<!-- div principal para todo o conteudo do site baseado em boodstrap -->
-<!-- container -->
-
-<div class="container">
-<div class="row">
-<!-- linha para as colunas. toda coluna deve estar dentro de uma linha-->
-<div class="col-md-12">
-Uma coluna de grid 12 ou seja 100% de largura
+<a href="#" class="navbar-brand">
+  <img width="162" height="30" src="http://www.elaborata.com.br/img/logo-elaborata.svg" alt="" />
+</a>
 </div>
+<!-- menu de navegação visivel, lista de links -->
+<div class="collapse navbar-collapse" id="menu-principal">
+  <ul class="nav navbar-nav">
+    <li><a href="#">Treinamentos</a></li>
+    <li><a href="#">Locação de Salas</a></li>
+    <li><a href="#">A empresa</a></li>
+    <li><a href="#">Mural de Vagas</a></li>
+    <li><a href="#">Contato</a></li>
+  </ul>
 </div>
-
-<div class="row">
-<!-- nova linha para novas colunas -->
-  <div class="col-md-4 col-sm-4 col-xs-4">
-  <h3>Coluna 1 de 3 </h3>
-  </div>
-
-  <div class="col-md-4 col-sm-4 col-xs-4">
-  <h3>Coluna 2 de 3</h3>
-  </div>
-
-  <div class="col-md-4 col-sm-4 col-xs-4">
-  <h3>Coluna 3 de 3</h3>
-  </div>
-</div> <!-- fim de linha  -->
-
-<!-- linha com colunas em tamanho diferentes dependendo do dispositivo -->
-<div class="col-md-4 col-sm-6 col-xs-12">
-  Nova coluna 1 de 3
-</div>
-
-<div class="col-md-4 col-sm-6 col-xs-12 ">
-Nova coluna 2 de 3
-</div>
-
-<div class="col-md-4 col-sm-6 col-xs-12">
-Nova coluna 3 de 3
-</div>
-</div> <!--  final de linha -->
 
 </div>
 
 
+    </nav>
+    <!-- MENU PRINCIPAL DE NAVEGA -->
 
-</body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
 </html>
