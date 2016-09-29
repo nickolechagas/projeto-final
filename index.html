@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Projeto em bootsrrap</title>
+    <title>Projeto em bootstrap</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Roboto:400,700|Ubuntu:400,700" rel="stylesheet">
+    <!-- deve-se chamar sua folha de estilo personalizada por último.
+    A ordem das CSS alterarão o resultado.  Para que você possa sobrepor
+    classes do bootstrap, sua CSS deve ser carregada por último. -->
+    <link rel="stylesheet" href="css/master.css" media="screen" title="no title">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,41 +23,130 @@
     <![endif]-->
   </head>
   <body>
-    <!-- MENU PRINCIPAL DE NAVEGA -->
+    <!-- menu principal de navegação -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <!-- div para o menu do celular -->
+          <!-- div para o menu de celular -->
           <button type="button" name="button" class="navbar-toggle collapsed"
           data-toggle="collapse"
-          data-target="#menu-principal" aria-expand="false">
-          <span class="sr only">Menu para celular</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-</button>
-<!-- FIM DO BOTAO DE MANU PARA CELULAR -->
-
-<a href="#" class="navbar-brand">
-  <img width="162" height="30" src="http://www.elaborata.com.br/img/logo-elaborata.svg" alt="" />
-</a>
-</div>
-<!-- menu de navegação visivel, lista de links -->
-<div class="collapse navbar-collapse" id="menu-principal">
-  <ul class="nav navbar-nav">
-    <li><a href="#">Treinamentos</a></li>
-    <li><a href="#">Locação de Salas</a></li>
-    <li><a href="#">A empresa</a></li>
-    <li><a href="#">Mural de Vagas</a></li>
-    <li><a href="#">Contato</a></li>
-  </ul>
-</div>
-
-</div>
-
-
+          data-target="#menu-principal" aria-expanded="false">
+            <span class="sr-only">Menu para Celular</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand">
+          <img width="162" height="30" src="http://www.elaborata.com.br/img/logo-elaborata.svg" alt="" />
+          </a>
+        </div>
+        <!-- menu de navegação visivel. Lista de links -->
+        <div class="collapse navbar-collapse" id="menu-principal">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Treinamentos</a></li>
+            <li><a href="#">Locação de Salas</a></li>
+            <li><a href="#">A Elaborata</a></li>
+            <li><a href="#">Mural de Vagas</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </div>
+        <!-- menu de navegação visivel. Lista de links -->
+      </div>
     </nav>
-    <!-- MENU PRINCIPAL DE NAVEGA -->
+    <!-- menu principal de navegação -->
+
+
+    <!-- Slider de Imagens - Banners rotativos - Carousel -->
+    <div id="banner" class="carousel slide" data-ride="carousel">
+      <!-- indicadores esféricos na parte inferior -->
+      <ol class="carousel-indicators">
+        <li data-target="#banner" data-slide-to="0" class="active"></li>
+        <li data-target="#banner" data-slide-to="1"></li>
+        <li data-target="#banner" data-slide-to="2"></li>
+      </ol>
+
+      <!-- conteúdo do banner (imagens) -->
+      <div class="carousel-inner">
+        <!-- cada imagem neste conjunto de divs -->
+        <div class="item active">
+          <img src="imagens/imagem-1.jpg" alt="" height="565">
+          <div class="carousel-caption">
+            <h1>Conheça nossas Soluções em TI</h1>
+            <h2>Subtitulo</h2>
+
+          </div>
+        </div>
+        <!-- cada imagem neste conjunto de divs -->
+        <!-- cada imagem neste conjunto de divs -->
+        <!-- <div class="item">
+          <img src="imagens/imagem-2.jpg" alt="" height="565">
+          <div class="carousel-caption">
+
+          </div>
+        </div> -->
+        <!-- cada imagem neste conjunto de divs -->
+        <!-- cada imagem neste conjunto de divs -->
+        <!-- <div class="item">
+          <img src="imagens/imagem-3.jpg" alt="" height="565">
+          <div class="carousel-caption">
+
+          </div>
+        </div> -->
+        <!-- cada imagem neste conjunto de divs -->
+
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#banner" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#banner" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+    <!-- Slider de Imagens - Banners rotativos - Carousel -->
+
+    <!-- div principal para todo o conteúdo (container) -->
+    <div class="container">
+
+      <!-- linha para 4 colunas -->
+      <div class="espaco"></div>
+      <div class="row">
+
+        <div class="col-md-3">
+          <img class="img-rounded img-responsive" src="imagens/imagem-1.jpg" alt="" />
+        </div>
+        <div class="col-md-3">
+          <img class="img-rounded img-responsive" src="imagens/imagem-2.jpg" alt="" />
+        </div>
+        <div class="col-md-3">
+          <img class=" img-rounded img-responsive" src="imagens/imagem-3.jpg" alt="" />
+        </div>
+        <div class="col-md-3">
+          <img class="img-rounded img-responsive" src="imagens/imagem-1.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="espaco"></div>
+      <div class="row cinza-claro">
+        <div class="col-md-12 text-center">
+          <h1>Lorem Ipsum Saint Mussum Batata cachaça</h1>
+        </div>
+      </div>
+
+      <div class="spaco"></div>
+      <div class="row">
+        <div class="col-md-12">
+          <p>Mussum Ipsum, cacilds vidis litro abertis. Viva Forevis aptent taciti sociosqu ad litora torquent Quem manda na minha terra sou Euzis! Pra lá , depois divoltis porris, paradis. Mais vale um bebadis conhecidiss, que um alcoolatra anonimiss.</p>
+          <p>Mussum Ipsum, cacilds vidis litro abertis. Viva Forevis aptent taciti sociosqu ad litora torquent Quem manda na minha terra sou Euzis! Pra lá , depois divoltis porris, paradis. Mais vale um bebadis conhecidiss, que um alcoolatra anonimiss.</p>
+          <p>Mussum Ipsum, cacilds vidis litro abertis. Viva Forevis aptent taciti sociosqu ad litora torquent Quem manda na minha terra sou Euzis! Pra lá , depois divoltis porris, paradis. Mais vale um bebadis conhecidiss, que um alcoolatra anonimiss.</p>
+          <p>Mussum Ipsum, cacilds vidis litro abertis. Viva Forevis aptent taciti sociosqu ad litora torquent Quem manda na minha terra sou Euzis! Pra lá , depois divoltis porris, paradis. Mais vale um bebadis conhecidiss, que um alcoolatra anonimiss.</p>
+        </div>
+      </div>
+
+    </div><!-- fecha container-->
+
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
